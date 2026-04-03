@@ -9,5 +9,6 @@ public class TakingInput {
         int second = sc.nextInt();
         int ans = first + second;
         System.out.println("Answer is :"+ ans);
+        
     }
 }
