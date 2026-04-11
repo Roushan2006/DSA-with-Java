@@ -97,14 +97,249 @@ public class pattern {
 
 
         // holo trangle
-        int n = 5;
-        for(int row = 1; row <= n; row++){
-            for(int col = 1; col <= n; col++){
-                if(row == col || col == 1 || row == n){
-                    System.out.print("* ");
-                }else{
-                    System.out.print("  ");
-                }
+//        int n = 5;
+//        for(int row = 1; row <= n; row++){
+//            for(int col = 1; col <= n; col++){
+//                if(row == col || col == 1 || row == n){
+//                    System.out.print("* ");
+//                }else{
+//                    System.out.print("  ");
+//                }
+//            }
+//            System.out.println();
+//        }
+
+
+        // holo  pyramid
+//        int n = 5;
+//        for (int row = 1; row <= n; row++){
+//            for(int col = 1; col < 2 * n; col++){
+//                if(col < n - row || col > n + row){
+//                    System.out.print("  ");
+//                }else{
+//                    if(row == n || col == n - row + 1 || col == n + row -1){
+//                        System.out.print("* ");
+//                    }else {
+//                        System.out.print("  ");
+//                    }
+//                }
+//            }
+//            System.out.println();
+//        }
+
+
+        // kaju katli
+//        int n = 4;
+//        for (int row = 1; row <= n; row++){
+//            for (int col = 1; col < 2 * n ; col++){
+//                if(col <= n - row || col >= n + row){
+//                    System.out.print("  ");
+//                }else{
+//                    System.out.print("* ");
+//                }
+//            }
+//            System.out.println();
+//        }
+//        for (int row = 2; row <= n; row++){
+//            for(int col = 1; col < 2 * n; col++ ){
+//                if(col < row || col > 2 * n - row ){
+//                    System.out.print("  ");
+//                }else{
+//                    System.out.print("* ");
+//                }
+//            }
+//            System.out.println();
+//        }
+        // optimal splution
+//        int n = 4;
+//
+//        for (int row = 1; row <= 2 * n - 1; row++) {
+//
+//            int totalColsInRow = row <= n ? row : 2 * n - row;
+//
+//            int spaces = n - totalColsInRow;
+//
+//            // print spaces
+//            for (int s = 1; s <= spaces; s++) {
+//                System.out.print("  ");
+//            }
+//
+//            // print stars
+//            for (int col = 1; col <= 2 * totalColsInRow - 1; col++) {
+//                System.out.print("* ");
+//            }
+//
+//            System.out.println();
+//        }
+
+
+        // holo diamond
+//        int n = 4;
+//        for (int row = 1; row <= n; row++){
+//            for(int col = 1; col < 2 * n; col++){
+//                if(col < n - row || col > n + row){
+//                    System.out.print("  ");
+//                }else{
+//                    if(col == n - row + 1 || col == n + row -1){
+//                        System.out.print("* ");
+//                    }else {
+//                        System.out.print("  ");
+//                    }
+//                }
+//            }
+//            System.out.println();
+//        }
+//
+//        for (int row = 2; row <= n; row++){
+//            for(int col = 1; col < 2 * n; col++){
+//                if( col == row || col == 2 * n -row){
+//                    System.out.print("* ");
+//                }else{
+//                    System.out.print("  ");
+//                }
+//            }
+//            System.out.println();
+//        }
+
+        // N
+//        int n = 4;
+//        for (int row = 1; row <= 2 * n; row++){
+//            for(int col = 1; col <= 2 * n; col++){
+//                if(col == 1 || col == 2 * n || col == row ){
+//                    System.out.print("* ");
+//                }else {
+//                    System.out.print("  ");
+//                }
+//            }
+//            System.out.println();
+//        }
+
+
+        // butterfly
+//        int n = 4;
+//        for (int row = 1; row <= n; row++){
+//            for(int col = 1; col <= row; col++){
+//                    System.out.print("* ");
+//            }
+//            for(int col = 1 ; col <= 2 * (n-row); col++){
+//                System.out.print("  ");
+//            }
+//            for(int col =1 ; col <= row; col++){
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
+//        for (int row = 1; row <= n; row++){
+//            for(int col = 1; col <= n - row + 1; col++){
+//                System.out.print("* ");
+//            }
+//            for(int col = 1; col <= 2 * (row - 1); col++){
+//                System.out.print("  ");
+//            }
+//            for(int col = 1; col <= n - row + 1; col++){
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
+
+
+
+        //half triangle number
+//        int n = 4;
+//        for (int row = 1; row <= n; row++) {
+//            for (int col = 1; col <= row; col++) {
+//                System.out.print(" "+col);
+//            }
+//            System.out.println();
+//        }
+
+        // half trinagle number
+//        int n = 4;
+//        int count = 1;
+//        for (int row = 1; row <= n; row++) {
+//            for (int col = 1; col <= row; col++) {
+//                System.out.print(" "+count);
+//                count ++;
+//            }
+//            System.out.println();
+//        }
+
+        // right angle
+//        int n = 4;
+//        for (int row = 1; row <= n; row++) {
+//            for (int col = 1; col <= row; col++) {
+//                char ans = (char)(col + ('A' - 1));
+//                System.out.print(" "+ans);
+//            }
+//            System.out.println();
+//        }
+//        int n = 4;
+//        for (int row = 1; row <= n; row++) {
+//            for (int col = 1; col <= row; col++) {
+//                char ans = (char)(n - col + ('A'));
+//                System.out.print(" "+ans);
+//            }
+//            System.out.println();
+//        }
+
+        //
+//        int n = 4;
+//        for (int row = 1; row <= n; row++){
+//            for(int col = 1; col < 2 * n; col++){
+//                if(col < row || col > 2 * n - row){
+//                    System.out.print("  ");
+//                }else {
+//                    System.out.print("* ");
+//                }
+//            }
+//            System.out.println();
+//        }
+//        for (int row = 1; row < n; row++){
+//            for(int col = 1; col < 2 * n; col++){
+//                if(col < n - row || col > n + row){
+//                    System.out.print("  ");
+//                }else {
+//                    System.out.print("* ");
+//                }
+//            }
+//            System.out.println();
+//        }
+
+
+        //
+//        int n = 4;
+//
+//        for (int row = 1; row <= n; row++){
+//            for (int col = 1; col <= n - row; col++){
+//                System.out.print("  ");
+//            }
+//            for(int col = 1; col <= row; col++){
+//                System.out.print(col+" ");
+//            }
+//            int k = row - 1;
+//            for (int col = 1; col <= row - 1; col++){
+//                System.out.print(k +" ");
+//                k--;
+//            }
+//            System.out.println();
+//        }
+
+
+
+        //
+        int n = 4;
+
+        for (int row = 1; row <= n; row++){
+            for (int col = 1; col <= n - row; col++){
+                System.out.print("  ");
+            }
+            int k = row ;
+            for(int col = 1; col <= row; col++){
+                System.out.print(k+" ");
+            }
+            for (int col = 1; col <= row - 1; col++){
+                System.out.print(k +" ");
+
             }
             System.out.println();
         }
