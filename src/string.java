@@ -14,6 +14,7 @@ public class string {
 //        // return character of index 4
 //        System.out.println(str.charAt(4));
 
+        
         String name1 = "Roushan";
         String name2 = "RoUshan";
         // == operator it compare to reference
