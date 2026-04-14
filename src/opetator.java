@@ -43,9 +43,8 @@ public class opetator {
 
 
         // Ternary Operator
-        int number = 7;
-        String result = (number % 2 == 0) ? "Even" : "Odd"; // result becomes "Odd"
-        System.out.println(result);
-
+        int number = 8;
+        String result = (number % 2 == 0) ? "Even" : "Odd"; // result becomes "Even"
+        System.out.println(result); // Prints: Even
     }
 }
