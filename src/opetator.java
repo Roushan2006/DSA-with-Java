@@ -10,6 +10,7 @@ public class opetator {
         System.out.println(num1 % num2);
 
 
+        
         // Relational Operator
         System.out.println(num1 == num2);
         System.out.println(num1 != num2);
